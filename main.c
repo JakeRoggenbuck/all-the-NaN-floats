@@ -31,5 +31,5 @@ int main() {
         counter++;
     } while (start < end);
 
-    printf("Wrote %d NaN floats", counter);
+    printf("Wrote %d NaN floats\n", counter);
 }
