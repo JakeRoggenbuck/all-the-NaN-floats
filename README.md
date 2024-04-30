@@ -9,3 +9,5 @@ This means that there are 2 ^ (32 - 8) or 16777216 possible values for NaN for t
 Helpful visualization: https://www.h-schmidt.net/FloatConverter/IEEE754.html
 
 The resulting file size is 2 ^ (32 - 8) * 4, where 4 is the amount of bytes a float 32 takes up. This results in ~67.11 Megabytes of disk space. If we compress this with something like xz with the highest level of compression, we get a file size of ~4.16 Megabytes.
+
+That [file](https://github.com/JakeRoggenbuck/all-the-NaN-floats/blob/main/all-the-nan-floats.xz) was small enough to include in the git project.
