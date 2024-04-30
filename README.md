@@ -1,4 +1,4 @@
-# all-the-floats
+# all-the-NaN-floats
 
 Write all of the [NaN](https://en.wikipedia.org/wiki/NaN) floats from [IEEE 754](https://en.wikipedia.org/wiki/IEEE_754) 32 bit floats to disk.
 
