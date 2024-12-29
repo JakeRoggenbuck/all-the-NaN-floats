@@ -11,7 +11,7 @@ int main() {
     unsigned int start = (0b011111111 << 23) + 1;
 
     // This is number where all the bits have been set except the sign bit
-    unsigned int end = (1 << 31) - 1u;
+    unsigned int end = 1 << 31;
 
     unsigned int eval_directly = end - start;
     printf("Calculated: %u NaNs.\n", eval_directly * 2);

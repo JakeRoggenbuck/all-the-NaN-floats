@@ -13,7 +13,7 @@ These are all of the NaNs between the range of start and end as seen here:
 
 ```c
 unsigned int start = (0b011111111 << 23) + 1;
-unsigned int end = (1 << 31) - 1u;
+unsigned int end = 1 << 31;
 ```
 
 Helpful visualization: https://www.h-schmidt.net/FloatConverter/IEEE754.html
