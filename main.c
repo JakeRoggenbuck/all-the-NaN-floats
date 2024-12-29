@@ -13,6 +13,9 @@ int main() {
     // This is number where all the bits have been set except the sign bit
     unsigned int end = (1 << 31) - 1u;
 
+    unsigned int eval_directly = end - start;
+    printf("Calculated: %u NaNs.\n", eval_directly * 2);
+
     int counter = 0;
 
     do {
@@ -31,5 +34,5 @@ int main() {
         counter++;
     } while (start < end);
 
-    printf("Wrote %d NaN floats\n", counter);
+    printf("Wrote %d NaN floats!\n", counter);
 }
