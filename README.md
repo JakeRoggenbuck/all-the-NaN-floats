@@ -5,7 +5,7 @@
 
 Write all of the [NaN](https://en.wikipedia.org/wiki/NaN) floats from [IEEE 754](https://en.wikipedia.org/wiki/IEEE_754) 32 bit floats to disk.
 
-In IEEE 754, if all 8 bits of the exponent are set to 1, then the float is NaN.
+In IEEE 754, if all 8 bits of the exponent in a 32 bit float are set to 1, and at least one of the bits in the mantissa is set to 1, then the float is NaN.
 
 This means that there are (2 ^ (32 - 8)) - 2 or 16777214 possible values for NaN for the version of NaN where all exponent bits are set to 1. There are 23 bits in the mantissa and a bit for positive and negative that all can be set to either 1 or 0. You also have to remember to subtract 2 because when just the sign and exponent are set, then it can be infinity for when the sign bit is 0 and -infinity when it's 1. You can see this is done when I start at `(0b011111111 << 23) + 1`, where the `+ 1` makes sure that not only the sign and exponent are set by adding 1 to the mantissa.
 
