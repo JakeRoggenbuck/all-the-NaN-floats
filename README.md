@@ -23,3 +23,5 @@ The resulting file size is ((2 ^ (32 - 8)) - 2) * 4, where 4 is the amount of by
 That [file](https://github.com/JakeRoggenbuck/all-the-NaN-floats/blob/main/all-the-nan-floats.xz) was small enough to include in the git project.
 
 This also means that a 64 bit IEEE float would have (2 ^ (64 - 11)) - 2 or 9007199254740990 different NaNs. This means a file with all of the NaNs would be ((2 ^ (64 - 11)) - 2) * 4 bytes or about 36,028TB and that's not realistically feasible to create.
+
+Also, a 128 bit float would have 36028797018963970 Exbibytes of NaN floats.
